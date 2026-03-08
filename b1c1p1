@@ -8,6 +8,6 @@ local function teleportPlayer(player)
 end
 
 Players.PlayerAdded:Connect(function(player)
-    wait(1)
+    wait(5) -- wait before teleporting
     teleportPlayer(player)
 end)
