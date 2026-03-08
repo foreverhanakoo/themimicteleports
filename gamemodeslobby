@@ -1,7 +1,7 @@
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 
-local placeId = 
+local placeId = 7068737459
 
 local function teleportPlayer(player)
     TeleportService:Teleport(placeId, player)
