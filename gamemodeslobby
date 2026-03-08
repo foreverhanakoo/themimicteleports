@@ -1,0 +1,13 @@
+local TeleportService = game:GetService("TeleportService")
+local Players = game:GetService("Players")
+
+local placeId = 
+
+local function teleportPlayer(player)
+    TeleportService:Teleport(placeId, player)
+end
+
+Players.PlayerAdded:Connect(function(player)
+    wait(5) -- wait before teleporting
+    teleportPlayer(player)
+end)
